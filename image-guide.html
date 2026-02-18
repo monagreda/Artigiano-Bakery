@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guía de Imágenes - Artigiano Bakery</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+            color: #ffffff;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 48px;
+            margin-bottom: 20px;
+            background: linear-gradient(135deg, #EC6B85, #722F37);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .subtitle {
+            text-align: center;
+            font-size: 18px;
+            color: #aaa;
+            margin-bottom: 60px;
+        }
+
+        .image-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 30px;
+            margin-bottom: 60px;
+        }
+
+        .image-card {
+            background: rgba(114, 47, 55, 0.1);
+            border: 2px solid rgba(114, 47, 55, 0.3);
+            border-radius: 16px;
+            padding: 24px;
+            transition: all 0.3s ease;
+        }
+
+        .image-card:hover {
+            transform: translateY(-5px);
+            border-color: #722F37;
+            box-shadow: 0 10px 40px rgba(114, 47, 55, 0.4);
+        }
+
+        .image-placeholder {
+            width: 100%;
+            height: 200px;
+            background: linear-gradient(135deg, #722F37, #5A252C);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 48px;
+            margin-bottom: 16px;
+        }
+
+        .image-title {
+            font-size: 20px;
+            font-weight: 700;
+            margin-bottom: 12px;
+            color: #EC6B85;
+        }
+
+        .image-filename {
+            font-family: 'Courier New', monospace;
+            background: rgba(0, 0, 0, 0.3);
+            padding: 8px 12px;
+            border-radius: 6px;
+            font-size: 13px;
+            margin-bottom: 12px;
+            color: #4ade80;
+        }
+
+        .image-description {
+            font-size: 14px;
+            color: #ccc;
+            line-height: 1.6;
+            margin-bottom: 12px;
+        }
+
+        .image-size {
+            font-size: 12px;
+            color: #888;
+            margin-bottom: 16px;
+        }
+
+        .download-links {
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 10px 20px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-size: 13px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            display: inline-block;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, #722F37, #5A252C);
+            color: white;
+        }
+
+        .btn-primary:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 20px rgba(114, 47, 55, 0.6);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            border: 2px solid #722F37;
+            color: #EC6B85;
+        }
+
+        .btn-secondary:hover {
+            background: rgba(114, 47, 55, 0.2);
+        }
+
+        .instructions {
+            background: rgba(114, 47, 55, 0.1);
+            border-left: 4px solid #722F37;
+            padding: 24px;
+            border-radius: 8px;
+            margin-bottom: 40px;
+        }
+
+        .instructions h2 {
+            font-size: 24px;
+            margin-bottom: 16px;
+            color: #EC6B85;
+        }
+
+        .instructions ol {
+            margin-left: 20px;
+            line-height: 1.8;
+        }
+
+        .instructions li {
+            margin-bottom: 12px;
+            color: #ddd;
+        }
+
+        .instructions code {
+            background: rgba(0, 0, 0, 0.3);
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-family: 'Courier New', monospace;
+            color: #4ade80;
+        }
+
+        .status-badge {
+            display: inline-block;
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 11px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .status-ready {
+            background: #22c55e;
+            color: white;
+        }
+
+        .status-pending {
+            background: #f59e0b;
+            color: white;
+        }
+
+        .quick-links {
+            text-align: center;
+            margin-top: 60px;
+            padding-top: 40px;
+            border-top: 1px solid rgba(114, 47, 55, 0.3);
+        }
+
+        .quick-links a {
+            margin: 0 16px;
+            color: #EC6B85;
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s ease;
+        }
+
+        .quick-links a:hover {
+            color: #F4A5B3;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>🥖 Guía de Imágenes</h1>
+        <p class="subtitle">Artigiano Bakery - Landing Page Premium</p>
+
+        <div class="instructions">
+            <h2>📋 Instrucciones Rápidas</h2>
+            <ol>
+                <li>Descarga o toma fotos de tus productos según las especificaciones abajo</li>
+                <li>Renombra los archivos exactamente como se indica (ej: <code>service_bread.jpg</code>)</li>
+                <li>Guarda todas las imágenes en la carpeta <code>images/</code></li>
+                <li>Recarga <code>index.html</code> en tu navegador</li>
+                <li>¡Listo! Tu web estará completa con imágenes reales</li>
+            </ol>
+        </div>
+
+        <h2 style="margin-bottom: 30px; font-size: 32px;">Imágenes Necesarias</h2>
+
+        <div class="image-grid">
+            <!-- Logo -->
+            <div class="image-card">
+                <div class="image-placeholder">🌾</div>
+                <div class="image-title">Logo Principal <span class="status-badge status-ready">✓ Listo</span></div>
+                <div class="image-filename">logo.jpg</div>
+                <div class="image-description">
+                    Tu logo ya está incluido y se usa en navbar, footer y sección About.
+                </div>
+                <div class="image-size">Tamaño: Variable (se adapta automáticamente)</div>
+            </div>
+
+            <!-- Hero Visual -->
+            <div class="image-card">
+                <div class="image-placeholder">🥖</div>
+                <div class="image-title">Hero Visual <span class="status-badge status-pending">Pendiente</span></div>
+                <div class="image-filename">hero_visual.jpg</div>
+                <div class="image-description">
+                    Composición artística de panes, croissants o tu producto estrella. Fondo oscuro, iluminación cálida.
+                </div>
+                <div class="image-size">Tamaño recomendado: 1200x1200px</div>
+                <div class="download-links">
+                    <a href="https://unsplash.com/s/photos/artisan-bread" target="_blank" class="btn btn-primary">Buscar
+                        en Unsplash</a>
+                    <a href="https://www.pexels.com/search/bakery/" target="_blank" class="btn btn-secondary">Buscar en
+                        Pexels</a>
+                </div>
+            </div>
+
+            <!-- Service 1: Bread -->
+            <div class="image-card">
+                <div class="image-placeholder">🍞</div>
+                <div class="image-title">Pan Artesanal <span class="status-badge status-pending">Pendiente</span></div>
+                <div class="image-filename">service_bread.jpg</div>
+                <div class="image-description">
+                    Panes rústicos, masa madre, integrales. Corteza dorada y crujiente, ambiente cálido.
+                </div>
+                <div class="image-size">Tamaño recomendado: 800x600px (landscape)</div>
+                <div class="download-links">
+                    <a href="https://unsplash.com/s/photos/sourdough-bread" target="_blank"
+                        class="btn btn-primary">Buscar en Unsplash</a>
+                </div>
+            </div>
+
+            <!-- Service 2: Pastries -->
+            <div class="image-card">
+                <div class="image-placeholder">🥐</div>
+                <div class="image-title">Bollería Francesa <span class="status-badge status-pending">Pendiente</span>
+                </div>
+                <div class="image-filename">service_pastries.jpg</div>
+                <div class="image-description">
+                    Croissants dorados, pain au chocolat, napolitanas. Hojaldre crujiente y apetitoso.
+                </div>
+                <div class="image-size">Tamaño recomendado: 800x600px (landscape)</div>
+                <div class="download-links">
+                    <a href="https://unsplash.com/s/photos/croissant" target="_blank" class="btn btn-primary">Buscar en
+                        Unsplash</a>
+                </div>
+            </div>
+
+            <!-- Service 3: Desserts -->
+            <div class="image-card">
+                <div class="image-placeholder">🍰</div>
+                <div class="image-title">Postres Gourmet <span class="status-badge status-pending">Pendiente</span>
+                </div>
+                <div class="image-filename">service_desserts.jpg</div>
+                <div class="image-description">
+                    Tartas elegantes, pasteles, cheesecakes. Presentación artística y apetitosa.
+                </div>
+                <div class="image-size">Tamaño recomendado: 800x600px (landscape)</div>
+                <div class="download-links">
+                    <a href="https://unsplash.com/s/photos/cake-dessert" target="_blank" class="btn btn-primary">Buscar
+                        en Unsplash</a>
+                </div>
+            </div>
+
+            <!-- Service 4: Catering -->
+            <div class="image-card">
+                <div class="image-placeholder">🎉</div>
+                <div class="image-title">Catering Eventos <span class="status-badge status-pending">Pendiente</span>
+                </div>
+                <div class="image-filename">service_catering.jpg</div>
+                <div class="image-description">
+                    Buffet elegante con variedad de productos. Mesa bien presentada para eventos.
+                </div>
+                <div class="image-size">Tamaño recomendado: 800x600px (landscape)</div>
+                <div class="download-links">
+                    <a href="https://unsplash.com/s/photos/catering-buffet" target="_blank"
+                        class="btn btn-primary">Buscar en Unsplash</a>
+                </div>
+            </div>
+
+            <!-- Service 5: Delivery -->
+            <div class="image-card">
+                <div class="image-placeholder">🚚</div>
+                <div class="image-title">Delivery Rápido <span class="status-badge status-pending">Pendiente</span>
+                </div>
+                <div class="image-filename">service_delivery.jpg</div>
+                <div class="image-description">
+                    Empaque premium, cajas de delivery, productos listos para entregar.
+                </div>
+                <div class="image-size">Tamaño recomendado: 800x600px (landscape)</div>
+                <div class="download-links">
+                    <a href="https://unsplash.com/s/photos/food-delivery-box" target="_blank"
+                        class="btn btn-primary">Buscar en Unsplash</a>
+                </div>
+            </div>
+
+            <!-- Service 6: Custom -->
+            <div class="image-card">
+                <div class="image-placeholder">✨</div>
+                <div class="image-title">Pedidos Especiales <span class="status-badge status-pending">Pendiente</span>
+                </div>
+                <div class="image-filename">service_custom.jpg</div>
+                <div class="image-description">
+                    Tartas personalizadas, productos únicos, creaciones a medida.
+                </div>
+                <div class="image-size">Tamaño recomendado: 800x600px (landscape)</div>
+                <div class="download-links">
+                    <a href="https://unsplash.com/s/photos/custom-cake" target="_blank" class="btn btn-primary">Buscar
+                        en Unsplash</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="instructions">
+            <h2>💡 Consejos Profesionales</h2>
+            <ol>
+                <li><strong>Usa tus propias fotos:</strong> Nada vende mejor que imágenes reales de tus productos</li>
+                <li><strong>Iluminación natural:</strong> Toma fotos cerca de una ventana con luz natural</li>
+                <li><strong>Fondo simple:</strong> Usa fondos oscuros o neutros que combinen con el diseño</li>
+                <li><strong>Close-ups apetitosos:</strong> Acércate para mostrar texturas y detalles</li>
+                <li><strong>Edición básica:</strong> Ajusta brillo y contraste para que se vean profesionales</li>
+                <li><strong>Formato JPG:</strong> Guarda en formato JPG para mejor compatibilidad</li>
+            </ol>
+        </div>
+
+        <div class="quick-links">
+            <a href="index.html">← Volver a la Landing Page</a>
+            <a href="README.md" target="_blank">📖 Leer Documentación Completa</a>
+        </div>
+    </div>
+</body>
+
+</html>
