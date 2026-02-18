@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Artigiano Bakery - Pan artesanal hecho con pasión. Bollería, postres, catering y delivery de productos frescos y artesanales.">
+    <meta name="keywords" content="panadería artesanal, pan fresco, bollería, postres, catering, delivery">
+    <title>Artigiano Bakery | Pan Artesanal Hecho con Pasión</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap"
+        rel="stylesheet">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Particles Background -->
+    <div class="particles-container" id="particles"></div>
+
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <div class="logo-container">
+                <img src="images/logo.jpg" alt="Artigiano Bakery Logo" class="logo"
+                    onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"><span
+                    class="logo-text"
+                    style="display:none; color:#F4A5B3; font-family:'Plus Jakarta Sans',sans-serif; font-weight:800; font-size:20px;">🌾
+                    Artigiano Bakery</span>
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#inicio" class="nav-link">Inicio</a></li>
+                <li><a href="#servicios" class="nav-link">Productos</a></li>
+                <li><a href="#sobre-nosotros" class="nav-link">Nosotros</a></li>
+                <li><a href="#testimonios" class="nav-link">Testimonios</a></li>
+                <li><a href="#contacto" class="nav-link">Contacto</a></li>
+            </ul>
+            <button class="btn-primary nav-cta">Pedir Ahora</button>
+            <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="inicio">
+        <div class="container hero-container">
+            <div class="hero-content">
+                <div class="hero-label">
+                    🥖 Tradición Artesanal Desde 1995
+                </div>
+                <h1 class="hero-title">
+                    El Sabor Auténtico del <span class="gradient-text">Pan Artesanal</span>
+                </h1>
+                <p class="hero-subtitle">
+                    Cada día horneamos con pasión pan fresco, bollería y postres artesanales.
+                    Ingredientes naturales, recetas tradicionales y el amor por lo bien hecho.
+                </p>
+                <div class="hero-ctas">
+                    <button class="btn-primary btn-large">
+                        Ver Nuestros Productos
+                    </button>
+                    <button class="btn-secondary btn-large">
+                        Hacer un Pedido
+                    </button>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <div class="stat-number" data-target="28">0</div>
+                        <div class="stat-label">Años de Experiencia</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-target="500">0</div>
+                        <div class="stat-label">Clientes Felices</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-target="50">0</div>
+                        <div class="stat-label">Productos Diarios</div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="sphere">
+                    <div class="sphere-inner">
+                        <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?w=800&q=80"
+                            alt="Pan Artesanal" class="hero-image"
+                            onerror="this.src='https://images.unsplash.com/photo-1549931319-a545dcf3bc7b?w=800&q=80'">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Proof -->
+    <section class="social-proof">
+        <div class="container">
+            <p class="social-proof-text">Confiado por las mejores familias y empresas</p>
+            <div class="clients-logos">
+                <div class="client-logo">🏆 Premio Mejor Pan 2024</div>
+                <div class="client-logo">⭐ 5 Estrellas Google</div>
+                <div class="client-logo">🥇 Certificado Artesanal</div>
+                <div class="client-logo">💚 100% Natural</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="servicios">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-label">🍞 Nuestros Productos</div>
+                <h2 class="section-title">Descubre Nuestra Selección Artesanal</h2>
+                <p class="section-subtitle">
+                    Cada producto es elaborado con ingredientes de primera calidad y el cuidado que mereces
+                </p>
+            </div>
+
+            <div class="services-grid">
+                <!-- Service 1: Pan Artesanal -->
+                <div class="service-card-flip">
+                    <div class="service-card-inner">
+                        <div class="service-card-front">
+                            <img src="https://images.unsplash.com/photo-1549931319-a545dcf3bc7b?w=800&q=80"
+                                alt="Pan Artesanal" class="service-image">
+                            <div class="service-overlay">
+                                <h3 class="service-title-front">🥖 Pan Artesanal</h3>
+                            </div>
+                        </div>
+                        <div class="service-card-back glass-card">
+                            <h3 class="service-title-back">Pan Artesanal</h3>
+                            <p class="service-description">
+                                Pan de masa madre, integral, multicereales y más. Horneado fresco cada mañana con
+                                harinas de primera calidad.
+                            </p>
+                            <div class="service-features">
+                                <span class="feature-tag">Masa Madre</span>
+                                <span class="feature-tag">Sin Aditivos</span>
+                                <span class="feature-tag">Receta Tradicional</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 2: Bollería -->
+                <div class="service-card-flip">
+                    <div class="service-card-inner">
+                        <div class="service-card-front">
+                            <img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?w=800&q=80"
+                                alt="Bollería Francesa" class="service-image">
+                            <div class="service-overlay">
+                                <h3 class="service-title-front">🥐 Bollería Francesa</h3>
+                            </div>
+                        </div>
+                        <div class="service-card-back glass-card">
+                            <h3 class="service-title-back">Bollería Francesa</h3>
+                            <p class="service-description">
+                                Croissants, pain au chocolat, napolitanas y más. Hojaldres crujientes y mantecosos
+                                hechos con mantequilla de verdad.
+                            </p>
+                            <div class="service-features">
+                                <span class="feature-tag">Mantequilla Real</span>
+                                <span class="feature-tag">Hojaldre Artesano</span>
+                                <span class="feature-tag">Recién Horneado</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 3: Postres -->
+                <div class="service-card-flip">
+                    <div class="service-card-inner">
+                        <div class="service-card-front">
+                            <img src="images/service_desserts.jpg" alt="Postres Gourmet" class="service-image">
+                            <div class="service-overlay">
+                                <h3 class="service-title-front">🍰 Postres Gourmet</h3>
+                            </div>
+                        </div>
+                        <div class="service-card-back glass-card">
+                            <h3 class="service-title-back">Postres Gourmet</h3>
+                            <p class="service-description">
+                                Tartas, pasteles, cheesecakes y dulces artesanales. Creaciones únicas para endulzar tus
+                                momentos especiales.
+                            </p>
+                            <div class="service-features">
+                                <span class="feature-tag">Recetas Exclusivas</span>
+                                <span class="feature-tag">Presentación Premium</span>
+                                <span class="feature-tag">Sabores Únicos</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 4: Catering -->
+                <div class="service-card-flip">
+                    <div class="service-card-inner">
+                        <div class="service-card-front">
+                            <img src="images/service_catering.jpg" alt="Catering para Eventos" class="service-image">
+                            <div class="service-overlay">
+                                <h3 class="service-title-front">🎉 Catering Eventos</h3>
+                            </div>
+                        </div>
+                        <div class="service-card-back glass-card">
+                            <h3 class="service-title-back">Catering para Eventos</h3>
+                            <p class="service-description">
+                                Buffets personalizados para bodas, eventos corporativos y celebraciones. Hacemos que tu
+                                evento sea inolvidable.
+                            </p>
+                            <div class="service-features">
+                                <span class="feature-tag">Menús Personalizados</span>
+                                <span class="feature-tag">Servicio Completo</span>
+                                <span class="feature-tag">Eventos Especiales</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 5: Delivery -->
+                <div class="service-card-flip">
+                    <div class="service-card-inner">
+                        <div class="service-card-front">
+                            <img src="images/service_delivery.jpg" alt="Delivery Rápido" class="service-image">
+                            <div class="service-overlay">
+                                <h3 class="service-title-front">🚚 Delivery Rápido</h3>
+                            </div>
+                        </div>
+                        <div class="service-card-back glass-card">
+                            <h3 class="service-title-back">Delivery Rápido</h3>
+                            <p class="service-description">
+                                Recibe nuestros productos frescos en la puerta de tu casa. Pedidos online fáciles y
+                                entrega el mismo día.
+                            </p>
+                            <div class="service-features">
+                                <span class="feature-tag">Mismo Día</span>
+                                <span class="feature-tag">Pedido Online</span>
+                                <span class="feature-tag">Empaque Premium</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 6: Productos Personalizados -->
+                <div class="service-card-flip">
+                    <div class="service-card-inner">
+                        <div class="service-card-front">
+                            <img src="images/service_custom.jpg" alt="Pedidos Especiales" class="service-image">
+                            <div class="service-overlay">
+                                <h3 class="service-title-front">✨ Pedidos Especiales</h3>
+                            </div>
+                        </div>
+                        <div class="service-card-back glass-card">
+                            <h3 class="service-title-back">Pedidos Especiales</h3>
+                            <p class="service-description">
+                                Tartas personalizadas, panes con formas únicas y creaciones a medida. Tu imaginación es
+                                el límite.
+                            </p>
+                            <div class="service-features">
+                                <span class="feature-tag">100% Personalizado</span>
+                                <span class="feature-tag">Diseños Únicos</span>
+                                <span class="feature-tag">Asesoramiento</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="sobre-nosotros">
+        <div class="container about-container">
+            <div class="about-image-wrapper">
+                <div class="about-image-circle">
+                    <img src="images/logo.jpg" alt="Artigiano Bakery" class="about-image"
+                        onerror="this.src='https://images.unsplash.com/photo-1509440159596-0249088772ff?w=600&q=80'">
+                </div>
+            </div>
+            <div class="about-content">
+                <div class="section-label">🌾 Nuestra Historia</div>
+                <h2 class="section-title">Pasión por el Pan Artesanal</h2>
+                <p class="about-text">
+                    Desde 1995, <strong>Artigiano Bakery</strong> ha sido sinónimo de calidad y tradición.
+                    Comenzamos como una pequeña panadería familiar con un sueño: llevar el auténtico sabor
+                    del pan artesanal a cada hogar.
+                </p>
+                <p class="about-text">
+                    Hoy, seguimos fieles a nuestras raíces, utilizando solo ingredientes naturales,
+                    harinas de primera calidad y técnicas tradicionales de fermentación. Cada pan,
+                    cada croissant, cada postre es elaborado con el mismo amor y dedicación del primer día.
+                </p>
+                <p class="about-text">
+                    Nuestro compromiso es simple: <strong>ofrecerte productos frescos, saludables y deliciosos</strong>
+                    que hagan de cada comida un momento especial.
+                </p>
+                <div class="about-values">
+                    <div class="value-item">
+                        <div class="value-icon">🌱</div>
+                        <div class="value-text">Ingredientes Naturales</div>
+                    </div>
+                    <div class="value-item">
+                        <div class="value-icon">👨‍🍳</div>
+                        <div class="value-text">Maestros Panaderos</div>
+                    </div>
+                    <div class="value-item">
+                        <div class="value-icon">❤️</div>
+                        <div class="value-text">Hecho con Pasión</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials" id="testimonios">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-label">💬 Testimonios</div>
+                <h2 class="section-title">Lo Que Dicen Nuestros Clientes</h2>
+            </div>
+
+            <div class="testimonials-grid">
+                <div class="testimonial-card glass-card">
+                    <div class="quote-mark">"</div>
+                    <p class="testimonial-text">
+                        El mejor pan artesanal que he probado. El croissant es simplemente perfecto,
+                        crujiente por fuera y suave por dentro. ¡No puedo dejar de venir!
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">MC</div>
+                        <div class="author-info">
+                            <div class="author-name">María Carmen López</div>
+                            <div class="author-role">Cliente Frecuente</div>
+                        </div>
+                    </div>
+                    <div class="testimonial-rating">
+                        ⭐⭐⭐⭐⭐
+                    </div>
+                </div>
+
+                <div class="testimonial-card glass-card">
+                    <div class="quote-mark">"</div>
+                    <p class="testimonial-text">
+                        Contraté su servicio de catering para mi boda y fue un éxito total.
+                        Los invitados no paraban de preguntar de dónde era el pan. ¡Gracias Artigiano!
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">JR</div>
+                        <div class="author-info">
+                            <div class="author-name">Javier Rodríguez</div>
+                            <div class="author-role">Cliente Catering</div>
+                        </div>
+                    </div>
+                    <div class="testimonial-rating">
+                        ⭐⭐⭐⭐⭐
+                    </div>
+                </div>
+
+                <div class="testimonial-card glass-card">
+                    <div class="quote-mark">"</div>
+                    <p class="testimonial-text">
+                        La tarta personalizada para el cumpleaños de mi hija fue una obra de arte.
+                        Hermosa y deliciosa. Definitivamente volveré para más celebraciones.
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">AS</div>
+                        <div class="author-info">
+                            <div class="author-name">Ana Sánchez</div>
+                            <div class="author-role">Cliente Postres</div>
+                        </div>
+                    </div>
+                    <div class="testimonial-rating">
+                        ⭐⭐⭐⭐⭐
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container cta-container">
+            <h2 class="cta-title">¿Listo para Probar el Mejor Pan Artesanal?</h2>
+            <p class="cta-subtitle">
+                Haz tu pedido hoy y recibe productos frescos en tu puerta.
+                <strong>Delivery gratis en pedidos mayores a $30</strong>
+            </p>
+            <button class="btn-primary btn-large btn-glow">
+                Hacer Mi Pedido Ahora
+            </button>
+            <p class="cta-urgency">⏰ Pedidos antes de las 10 AM se entregan el mismo día</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contacto">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-label">📞 Contacto</div>
+                <h2 class="section-title">Visítanos o Contáctanos</h2>
+            </div>
+
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="contact-item glass-card">
+                        <div class="contact-icon">📍</div>
+                        <div class="contact-details">
+                            <h3>Dirección</h3>
+                            <p>Calle Principal 123<br>Centro, Ciudad</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item glass-card">
+                        <div class="contact-icon">📞</div>
+                        <div class="contact-details">
+                            <h3>Teléfono</h3>
+                            <p>+1 (555) 123-4567</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item glass-card">
+                        <div class="contact-icon">⏰</div>
+                        <div class="contact-details">
+                            <h3>Horario</h3>
+                            <p>Lun - Sáb: 7:00 AM - 8:00 PM<br>Dom: 8:00 AM - 2:00 PM</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item glass-card">
+                        <div class="contact-icon">📧</div>
+                        <div class="contact-details">
+                            <h3>Email</h3>
+                            <p>info@artigianobakery.com</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form-wrapper glass-card">
+                    <h3>Envíanos un Mensaje</h3>
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <input type="text" placeholder="Tu Nombre" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Tu Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" placeholder="Tu Teléfono">
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Tu Mensaje" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn-primary btn-block">Enviar Mensaje</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-columns">
+                <div class="footer-column">
+                    <img src="images/logo.jpg" alt="Artigiano Bakery" class="footer-logo"
+                        onerror="this.style.display='none'; this.nextElementSibling.style.display='block';"><span
+                        class="footer-logo-text"
+                        style="display:none; color:#F4A5B3; font-family:'Plus Jakarta Sans',sans-serif; font-weight:800; font-size:22px; margin-bottom:16px; display:block;">🌾
+                        Artigiano Bakery</span>
+                    <p class="footer-description">
+                        Pan artesanal hecho con pasión desde 1995. Calidad, tradición y sabor en cada bocado.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" class="social-link">📘 Facebook</a>
+                        <a href="#" class="social-link">📷 Instagram</a>
+                        <a href="#" class="social-link">🐦 Twitter</a>
+                    </div>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Productos</h4>
+                    <ul class="footer-links">
+                        <li><a href="#servicios">Pan Artesanal</a></li>
+                        <li><a href="#servicios">Bollería</a></li>
+                        <li><a href="#servicios">Postres</a></li>
+                        <li><a href="#servicios">Catering</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Empresa</h4>
+                    <ul class="footer-links">
+                        <li><a href="#sobre-nosotros">Sobre Nosotros</a></li>
+                        <li><a href="#testimonios">Testimonios</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                        <li><a href="#">Trabaja con Nosotros</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Legal</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Política de Privacidad</a></li>
+                        <li><a href="#">Términos y Condiciones</a></li>
+                        <li><a href="#">Política de Cookies</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Artigiano Bakery. Todos los derechos reservados.</p>
+                <p>Hecho con ❤️ y mucha harina</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+
+</html>
